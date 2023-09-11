@@ -44,10 +44,10 @@ management:
     circuitbreakers:
       enabled: true
   endpoint:
-    healt:
+    health:
       show-details: always
 
-resilence4j:
+resilience4j:
   circuitbreaker:
     instances:
       movies:
@@ -65,6 +65,6 @@ resilence4j:
         waitDuration: 1000
         maxAttempts: 3
         retryException:
-          - feign.FeignException$InternalServerError       
+          - feign.FeignException$InternalServerError
 
 
