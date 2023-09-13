@@ -68,3 +68,6 @@ resilience4j:
           - feign.FeignException$InternalServerError
 
 
+queue:
+  movie:
+    name: movieQueue
